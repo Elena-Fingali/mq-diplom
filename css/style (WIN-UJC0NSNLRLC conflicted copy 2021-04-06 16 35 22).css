@@ -48,7 +48,6 @@ html{
 .header-logo {
     display: block;
     width: 179px;
-    margin-left: 30px;
 }
 
 .header-menu {
@@ -56,50 +55,7 @@ html{
     flex-direction: row-reverse;
     align-items: center;
 }
-.menu__button{
-    display: none;
-}
-.menu__button{
-    width:1.4em;
-    height: 1em;
-    border: none;
-    padding: 0;
-    background-color: transparent;
-    font-size: 25px;
-    position: relative;
-    text-indent:-9999px;
-    cursor: pointer;
-}
-.menu__button:before{
-    content: "";
-    width: 100%;
-    height: 20%;
-    border-radius: 5px;
-    background-color: #ffffff;
-    position: absolute;
-    left:0;
-    top:0;
-}
-.menu__button-label{
-    width: 100%;
-    height: 20%;
-    margin-top:-0.1em;
-    border-radius: 5px;
-    background-color: #ffffff;
-    position: absolute;
-    left:0;
-    top:50%;
-}
-.menu__button:after{
-    content: "";
-    width: 100%;
-    height: 20%;
-    border-radius: 5px;
-    background-color: #ffffff;
-    position: absolute;
-    left:0;
-    bottom: 0;
-}
+
 .header-menu-list {
     display: flex;
     flex-direction: row;
@@ -305,7 +261,7 @@ html{
 
 .content-sidebar {
     display: flex;
-    max-width: 120rem;
+    width: 1200px;
     margin-right: auto;
     margin-left: auto;
     padding-right: 15px;
@@ -314,8 +270,6 @@ html{
 }
 
 .main-content {
-    display: flex;
-    flex-direction: column;
     margin-right: 120px;
     margin-bottom: 65px;
     width: 740px;
@@ -335,8 +289,7 @@ html{
 }
 
 .theme-post {
-    max-width: 27rem;
-
+    margin-left: 30px;
 }
 
 .theme-post-list {
@@ -398,15 +351,14 @@ html{
 
 .post-content-blog {
     color: #000000;
+    font-family: "Open Sans Regular", "Arial", sans-serif;
     font-size: 15px;
     line-height: 22px;
     margin-top: 38px;
 }
 
 .sidebar {
-    display: flex;
-    flex-direction: column;
-    max-width: 20rem;
+    width: 270px;
 }
 
 .name-list {
@@ -733,18 +685,17 @@ html{
 .posts-shop-all {
     display: flex;
     flex-wrap: wrap;
-    max-width: 120rem;
+    width: 1170px;
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
-
 }
 
 .shop-post {
     display: inline-block;
     box-sizing: border-box;
     width: 300px;
-    justify-content: space-between;
+    margin-left: 110px;
     position: relative;
 }
 
@@ -758,11 +709,11 @@ html{
 }
 
 .content-shop-all {
-    outline: 2px solid #b59f5b;
-    outline-offset: 2rem;
+    outline: 3px solid #b59f5b;
+    outline-offset: 20px;
+    flex-grow: 1;
     align-items: flex-end;
     z-index: 2;
-    flex-grow: 1;
 }
 
 
@@ -825,7 +776,7 @@ html{
 }
 
 .footer {
-    max-width: 120rem;
+    width: 1185px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 127px;
@@ -1042,87 +993,70 @@ html{
 }
 
 @media (min-width: 641px) and (max-width: 1199px) {
-    html {
+    html{
         font-size: 87.5%;
     }
-
     .header {
         background-image: url(../images/banner-bg-tablet.jpg);
-        width: 100%
+        background-color: #000000;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        z-index: 1;
+        width:100%
     }
 
-    .header-title {
+    .header::after {
+        content: "";
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        background-color: #000000;
+        z-index: -1;
+        opacity: 0.6;
+    }
+     .header-title{
         font-size: 4rem;
     }
-    .menu__button{
-        display:inline-block;
-        margin-right: 35px;
-    }
-    .header-menu-list{
-        display: none;
-    }
-
-    .trends-post-one, .trends-post-two, .trends-post-three, .trends-post-four {
-        display: flex;
-        width: 49.50%;
-    }
-
-    .trends-post-one, .trends-post-two {
-        margin-bottom: 4px;
-    }
-    .trends-post-one, .trends-post-three{
-        margin-right: 4px;
-    }
-
-    .main-content{
-        flex:1;
-        margin-right: unset;
-    }
-    .post-content{
-        flex-direction: column;
-        margin-left:35px;
-    }
-    .theme-post{
-        margin-top:15px;
-
-    }
-    .shop-post{
-        width: 47%;
-    }
-}
+   }
 
 
 @media (max-width: 640px) {
     html{
-        font-size: 60%;
+        font-size: 120%;
     }
     .header {
         background-image: url(../images/banner-mobile.jpg);
+        background-color: #000000;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        z-index: 1;
         width:100%;
+    }
+
+    .header::after {
+        content: "";
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        background-color: #000000;
+        z-index: -1;
+        opacity: 0.6;
     }
 
     .header-title{
         font-size: 2.6rem;
-    }
-    .menu__button{
-        display:inline-block;
-
-    }
-    .header-menu-list{
-        display: none;
-    }
-    .trends-post-one, .trends-post-two, .trends-post-three, .trends-post-four{
-        width: 100%;
-    }
-    .content-sidebar{
-        flex-direction: column;
-    }
-    .main-content{
-        flex:1;
-        margin-right: unset;
-    }
-    .post-content{
-        flex-direction: column;
     }
  }
 
