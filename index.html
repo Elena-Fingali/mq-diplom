@@ -17,6 +17,9 @@
         </a>
         </div>
         <nav class="header-menu">
+            <button class="menu__button">
+                <span class="menu__button-label">открыть меню</span>
+            </button>
             <ul class="header-menu-list">
                 <li class="menu-item-list"><a href="#" class="menu-item">главная</a></li>
                 <li class="menu-item-list"><a href="#" class="menu-item">посты</a></li>
@@ -32,12 +35,9 @@
 <div class="trends">
     <h2 class="title-trends"><a href="#" class="title-trends-name">Сейчас в тренде</a></h2>
     <div class="trends-posts-container">
-        <article class="trends-post">
+        <article class="trends-post-one">
             <div class="container">
-    <div class="trends-image">
-        <img src="images/trend1.jpg" alt="цветы в горшках" class="image__trends">
-    </div>
-           <div class="content-blog-trend">
+               <div class="content-blog-trend">
                     <ul class="category-post-list">
                         <li class="post-list-content"><a href="#" class="post-list">lifestyle</a></li>
                         <li class="post-list-content"><a href="#" class="post-list">interior</a></li>
@@ -48,12 +48,9 @@
                 </div>
             </div>
         </article>
-        <article class="trends-post">
+        <article class="trends-post-two">
             <div class="container">
-            <div class="trends-image">
-                <img src="images/trend2.jpg" alt="сыры" class="image__trends">
-            </div>
-                <div class="content-blog-trend">
+               <div class="content-blog-trend">
                     <ul class="category-post-list">
                         <li class="post-list-content"><a href="#" class="post-list">food</a></li>
                     </ul>
@@ -63,12 +60,9 @@
                 </div>
             </div>
         </article>
-        <article class="trends-post-">
+        <article class="trends-post-three">
             <div class="container">
-            <div class="trends-image">
-                <img src="images/trend3.jpg" alt="горы" class="image__trends">
-            </div>
-                <div class="content-blog-trend">
+              <div class="content-blog-trend">
                     <ul class="category-post-list">
                         <li class="post-list-content"><a href="#" class="post-list">lifestyle</a></li>
                         <li class="post-list-content"><a href="#" class="post-list">travel</a></li>
@@ -79,12 +73,9 @@
                 </div>
             </div>
         </article>
-        <article class="trends-post">
+        <article class="trends-post-four">
             <div class="container">
-            <div class="trends-image">
-                <img src="images/trend4.jpg" alt="лимоны в корзинке" class="image__trends">
-            </div>
-                <div class="content-blog-trend">
+               <div class="content-blog-trend">
                     <ul class="category-post-list">
                         <li class="post-list-content"><a href="#" class="post-list">food</a></li>
                         <li class="post-list-content"><a href="#" class="post-list">health</a></li>
@@ -313,7 +304,15 @@
     <h2 class="title-shop"><a href="#" class="title-shop-name">Наши изделия</a></h2>
     <div class="posts-shop-all">
         <article class="shop-post">
+            <picture class="image-shop-all">
+                <source
+                media="(min-width:641px) and (max-width:1199px)"
+                srcset="images/shop-item-tablet1.jpg">
+                <source
+                media="(max-width:640px)"
+                srcset="images/shop-item-mobile1.jpg">
             <img src="images/shop-item-desk1.jpg" alt="подушка на диване">
+            </picture>
             <div class="content-shop-all">
                 <h2 class="post-shop-name"><a href=# class="shop-post-name">Подушка на диван</a></h2>
                 <div class="shop-content-blog">
@@ -336,7 +335,15 @@
             </div>
         </article>
         <article class="shop-post">
-            <img src="images/shop-item-desk2.jpg" alt="МЯгкая игрушка зайчик рядом с книгами">
+            <picture class="image-shop-all">
+                <source
+                        media="(min-width:641px) and (max-width:1199px)"
+                        srcset="images/shop-item-tablet2.jpg">
+                <source
+                        media="(max-width:640px)"
+                        srcset="images/shop-item-mobile2.jpg">
+                <img src="images/shop-item-desk2.jpg" alt="МЯгкая игрушка зайчик рядом с книгами">
+            </picture>
             <div class="content-shop-all">
                 <h2 class="post-shop-name"><a href=# class="shop-post-name">Кукла "Зайчик"</a></h2>
                 <div class="shop-content-blog">
@@ -355,7 +362,15 @@
             </div>
         </article>
         <article class="shop-post">
-            <img src="images/shop-item-desk3.jpg" alt="шестиугольная рамка">
+            <picture class="image-shop-all">
+                <source
+                        media="(min-width:641px) and (max-width:1199px)"
+                        srcset="images/shop-item-tablet3.jpg">
+                <source
+                        media="(max-width:640px)"
+                        srcset="images/shop-item-mobile3.jpg">
+                <img src="images/shop-item-desk3.jpg" alt="шестиугольная рамка">
+            </picture>
             <div class="content-shop-all">
                 <h2 class="post-shop-name"><a href=# class="shop-post-name">шестиугольная рамка</a></h2>
                 <div class="shop-content-blog">
@@ -399,9 +414,9 @@
     </div>
 </footer>
 <div class="popup">
-    <h2 class="popup_name"><a href="#" class="title-popup-name">Ваш Фидбек</a></h2>
     <div class="popup-content">
-        <form class="popup-form">
+    <h2 class="popup_name"><a class="title-popup-name">Ваш Фидбек</a></h2>
+    <form class="popup-form">
             <div class="popup-column__one">
                 <label class="popup-visit" for="day">Как часто вы заходите на сайт?</label>
                 <input id="day" class="popup-visit-day" placeholder="Почти каждый день" name="day" required>
@@ -419,7 +434,7 @@
             </div>
             <div class="popup-column__three">
                 <label class="popup-offer" for="offers">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</label>
-                <input id="offers" class="popup-visit-offers" placeholder="Может, больше рецептов?" name="offers" required>
+                <textarea id="offers" name="offers" class="popup-visit-offers">Может, больше рецептов?</textarea>
             </div>
             <div class="popup-button-one">
                 <button class="popup__button">
