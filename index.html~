@@ -442,7 +442,6 @@
                 </button>
             </div>
         </form>
-        <button class="popup__close" type="button">Закрыть окно</button>
     </div>
 </div>
 </body>
