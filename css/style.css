@@ -1,51 +1,44 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-html{
-    font-size:112.5% ;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-.header {
+.header{
     background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg);
     background-color: #000000;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover;
+    background-size:cover;
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    z-index: 1;
+    z-index:1;
     padding-top: 40px;
     padding-bottom: 217px;
-    width:100%;
 }
-
 .header::after {
-    content: "";
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    content:"";
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
     position: absolute;
     background-color: #000000;
-    z-index: -1;
-    opacity: 0.6;
+    z-index:-1;
+    opacity:0.6;
 }
-
 .header-logo-menu {
-    display: flex;
-    max-width: 1200px;
+    display:flex;
+    width: 1170px;
     vertical-align: middle;
     justify-content: space-between;
     text-align: center;
-    margin-right: auto;
-    margin-left: auto;
+    margin-right:auto;
+    margin-left:auto;
 
 }
-
-.header-logo {
+.header-logo{
     display: block;
     width: 179px;
     margin-left: 30px;
@@ -100,20 +93,21 @@ html{
     left:0;
     bottom: 0;
 }
+
+
 .header-menu-list {
-    display: flex;
-    flex-direction: row;
+    display:flex;
+    flex-direction:row;
     list-style-type: none;
 }
 
-.menu-item-list:nth-child(n+1) {
+.menu-item-list:nth-child(n+1){
     margin-right: 35px;
 }
-
-.menu-item {
-    text-decoration: none;
+.menu-item{
+    text-decoration:none;
     list-style-type: none;
-    font-family: "Open Sans Regular", "Arial", sans-serif;
+    font-family: "Open Sans Regular", Arial, sans-serif;
     font-size: 13px;
     color: #ffffff;
     text-transform: uppercase;
@@ -122,9 +116,8 @@ html{
 @font-face {
     font-family: "Open Sans Regular";
     src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff);
-    font-weight: normal;
-}
 
+}
 @font-face {
     font-family: "Open Sans Bold";
     src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff);
@@ -132,19 +125,18 @@ html{
 }
 
 .header-title {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
     padding: 0;
     text-transform: uppercase;
-    font-size: 2.5rem;
+    font-size: 45px;
     text-align: center;
     color: #ffffff;
-    font-family: "Open Sans Bold", "Arial", sans-serif;
+    font-family: "Open Sans Bold", Arial, sans-serif;
     margin-top: 197px;
-    width: 700px;
+    width:700px;
 }
-
 .title-trends {
     position: relative;
     text-align: center;
@@ -258,17 +250,17 @@ html{
     z-index: 1;
 }
 .trends-post-four::after{
-     content: "";
-     top: 0;
-     right: 0;
-     bottom: 0;
-     left: 0;
-     position: absolute;
-     background-color: #606260;
-     z-index: -1;
-     opacity: 0.6;
-     width: 100%;
- }
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background-color: #606260;
+    z-index: -1;
+    opacity: 0.6;
+    width: 100%;
+}
 .container{
     width: 100%;
     position: relative;
@@ -280,12 +272,12 @@ html{
     margin: 10rem 1.5rem 1.5rem;
 }
 
- .category-post-list{
+.category-post-list{
     display: flex;
     flex-direction: row;
     list-style-type: none;
     margin-bottom: 15px;
-    }
+}
 
 .post-list {
     text-decoration: none;
@@ -304,58 +296,53 @@ html{
 }
 
 .content-sidebar {
-    display: flex;
-    max-width: 120rem;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-top: 64px;
+    display:flex;
+    width:1200px;
+    margin-right:auto;
+    margin-left:auto;
+    padding-right:15px;
+    padding-left:15px;
+    margin-top:64px;
 }
 
 .main-content {
-    display: flex;
-    flex-direction: column;
-    margin-right: 120px;
     margin-bottom: 65px;
-    width: 740px;
-}
+    margin-right: 7.5rem;
+    }
 
-.post-content {
+.post-content{
     display: flex;
-    box-sizing: border-box;
+    box-sizing:border-box;
 }
 
-.post-content:nth-child(n+2) {
+.post-content:nth-child(n+2){
     margin-top: 64px;
 }
 
 .post-image {
-    width: 381px;
+    width:381px;
 }
 
 .theme-post {
-    max-width: 27rem;
-
+    margin-left: 30px;
 }
 
 .theme-post-list {
-    display: flex;
+    display:flex;
     list-style-type: none;
     margin-top: 0;
     margin-bottom: 0;
-    padding-left: 0;
+    padding-left:0;
 }
-
-.post-item-list {
-    margin-right: 20px;
+.post-item-list{
+    margin-right:20px;
 }
 
 .post-item {
-    text-decoration: none;
+    text-decoration:none;
     list-style-type: none;
     text-transform: uppercase;
-    font-family: "Open Sans Bold", "Arial", sans-serif;
+    font-family: "Open Sans Bold", Arial, sans-serif;
     font-size: 14px;
     color: #b59f5b;
     font-weight: bold;
@@ -363,15 +350,15 @@ html{
 
 .post-name {
     width: 367px;
-    margin-top: 13px;
+    margin-top:13px;
 }
 
 .theme-post-name {
-    display: flex;
-    text-decoration: none;
+    display:flex;
+    text-decoration:none;
     list-style-type: none;
     text-transform: uppercase;
-    font-family: "Open Sans Bold", Arial, sans-serif;
+    font-family: "Open Sans Bold", Arial,sans-serif;
     font-size: 20px;
     color: #0f0d0e;
     font-weight: bold;
@@ -379,328 +366,318 @@ html{
 
 }
 
-.post-date {
-    display: inline-block;
-    color: #888888;
-    font-family: "Open Sans Regular", "Arial", sans-serif;
+.post-date{
+    display:inline-block;
+    color:#888888;
+    font-family: "Open Sans Regular", Arial,sans-serif;
     font-size: 12px;
-    margin-top: 38px;
+    margin-top:38px;
 }
-
 .author {
-    display: inline-block;
-    color: #000000;
+    display:inline-block;
+    color:#000000;
     font-family: "Open Sans Bold", "Arial", sans-serif;
     font-size: 12px;
-    margin-left: 8px;
+    margin-left:8px;
 
 }
 
 .post-content-blog {
-    color: #000000;
-    font-size: 15px;
+    color:#000000;
+    font-size:15px;
     line-height: 22px;
-    margin-top: 38px;
+    margin-top:38px;
+    font-family: "Open Sans Regular", "Arial", sans-serif;
 }
 
 .sidebar {
-    display: flex;
-    flex-direction: column;
-    max-width: 20rem;
+    width:270px;
 }
 
 .name-list {
-    position: relative;
-    text-align: center;
-    padding-bottom: 28px;
+    position:relative;
+    text-align:center;
+    padding-bottom:28px;
 }
 
 .name-list-post {
     font-family: "Open Sans Bold", "Arial", sans-serif;
-    font-size: 14px;
-    color: #0f0d0e;
+    font-size:14px;
+    color:#0f0d0e;
     text-transform: uppercase;
-    text-decoration: none;
+    text-decoration:none;
     position: relative;
-}
 
-.name-list::after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 66px;
+}
+.name-list::after{
+    content:"";
+    position:absolute;
+    display:block;
+    width:66px;
     border-bottom: 3px solid;
-    color: #e1d9bd;
-    margin: auto;
-    left: 0;
-    right: 0;
-    padding-bottom: 15px;
+    color:#e1d9bd;
+    margin:auto;
+    left:0;
+    right:0;
+    padding-bottom:15px;
+}
+.latest-post{
+    display:flex;
+    margin-top:20px;
 }
 
-.latest-post {
-    display: flex;
-    margin-top: 20px;
+.image-latest-post{
+    width:70px;
 }
 
-.image-latest-post {
-    width: 70px;
+.latest-title{
+    display:block;
+    margin-left:15px;
 }
 
-.latest-title {
-    display: block;
-    margin-left: 15px;
+.latest-date{
+    font-family: "Open Sans Bold", "Arial", sans-serif;
+    font-size:12px;
+    line-height:40px;
+    color:#757575;
 }
-
-.latest-date {
-    font-family: "Open Sans Regular", "Arial", sans-serif;
-    font-size: 12px;
-    line-height: 40px;
-    color: #757575;
+.latest-name{
+    margin:0;
+    padding:0;
 }
-
-.latest-name {
-    margin: 0;
-    padding: 0;
-}
-
 .latest-post-name {
     list-style-type: none;
     font-family: "Open Sans Bold", "Arial", sans-serif;
     font-size: 14px;
-    line-height: 18px;
-    color: #000000;
+    line-height:18px;
+    color:#000000;
     text-transform: uppercase;
-    text-decoration: none;
+    text-decoration:none;
 }
-
-.search-info {
-    margin-top: 60px;
+.search-info{
+    margin-top:60px;
 }
-
-.form-search {
-    display: flex;
+.form-search{
+    display:flex;
 
 }
-
 .field {
-    position: relative;
-    width: 220px;
-    height: 50px;
-    border: none;
-    padding-left: 20px;
-    background-color: #f4f7f6;
-    color: #797a7a;
-    font-family: "Open Sans Regular", "Arial", sans-serif;
-    font-size: 13px;
+    position:relative;
+    width:220px;
+    height:50px;
+    border:none;
+    padding-left:20px;
+    background-color:#f4f7f6;
+    color:#797a7a;
+    font-family: "Open Sans Bold", "Arial", sans-serif;
+    font-size:13px;
 }
 
-.button {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    border: none;
-    margin-left: 220px;
+.button{
+    position:absolute;
+    width:50px;
+    height:50px;
+    border:none;
+    margin-left:220px;
 
 }
 
-.button::before {
-    content: "";
-    position: absolute;
-    width: 50px;
-    height: 50px;
+.button::before{
+    content:"";
+    position:absolute;
+    width:50px;
+    height:50px;
     background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/search.svg);
-    background-repeat: no-repeat;
-    background-color: #b59f5b;
-    background-size: 18px;
+    background-repeat:no-repeat;
+    background-color:#b59f5b;
+    background-size:18px;
     background-position: center center;
-    top: 0;
-    right: 0;
-    left: 0;
-    button: 0;
+    top:0;
+    right:0;
+    left:0;
+    button:0;
 }
 
 
 .name-list-second {
-    position: relative;
-    text-align: center;
-    margin-top: 63px;
-    margin-bottom: 24px;
+    position:relative;
+    text-align:center;
+    margin-top:63px;
+    margin-bottom:24px;
 }
 
 .name-list-post-second {
     font-family: "Open Sans Bold", "Arial", sans-serif;
-    font-size: 14px;
-    color: #0f0d0e;
+    font-size:14px;
+    color:#0f0d0e;
     text-transform: uppercase;
-    text-decoration: none;
+    text-decoration:none;
     position: relative;
 }
 
-.name-list-second::after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 66px;
+.name-list-second::after{
+    content:"";
+    position:absolute;
+    display:block;
+    width:66px;
     border-bottom: 3px solid;
-    color: #e1d9bd;
-    margin: auto;
-    left: 0;
-    right: 0;
-    padding-bottom: 15px;
+    color:#e1d9bd;
+    margin:auto;
+    left:0;
+    right:0;
+    padding-bottom:15px;
 }
 
 .input-mail {
     margin-top: 24px;
 }
-
 .mail-field {
-    width: 270px;
+    width:270px;
     height: 48px;
-    border: none;
-    padding-left: 20px;
-    padding-right: 20px;
-    background-color: #f4f7f6;
-    color: #797a7a;
-    font-family: "Open Sans Regular", "Arial", sans-serif;
-    font-size: 13px;
+    border:none;
+    padding-left:20px;
+    padding-right:20px;
+    background-color:#f4f7f6;
+    color:#797a7a;
+    font-family: "Open Sans Bold", "Arial", sans-serif;
+    font-size:13px;
 }
-
-.button-mail {
-    width: 270px;
-    height: 48px;
-    margin-top: 18px;
-    border: none;
-    background-color: #b59f5b;
+.button-mail{
+    width:270px;
+    height:48px;
+    margin-top:18px;
+    border:none;
+    background-color:#b59f5b;
     font-family: "Open Sans Bold", "Arial", sans-serif;
     font-size: 14px;
-    color: #ffffff;
+    color:#ffffff;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight:bold;
 }
 
 .name-list-third {
-    position: relative;
-    text-align: center;
-    margin-top: 63px;
-    margin-bottom: 23px;
+    position:relative;
+    text-align:center;
+    margin-top:63px;
+    margin-bottom:23px;
 }
 
 .name-list-post-third {
     font-family: "Open Sans Bold", "Arial", sans-serif;
-    font-size: 14px;
-    color: #0f0d0e;
+    font-size:14px;
+    color:#0f0d0e;
     text-transform: uppercase;
-    text-decoration: none;
+    text-decoration:none;
     position: relative;
 }
 
-.name-list-third::after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 66px;
+.name-list-third::after{
+    content:"";
+    position:absolute;
+    display:block;
+    width:66px;
     border-bottom: 3px solid;
-    color: #e1d9bd;
-    margin: auto;
-    left: 0;
-    right: 0;
-    padding-bottom: 15px;
+    color:#e1d9bd;
+    margin:auto;
+    left:0;
+    right:0;
+    padding-bottom:15px;
 }
 
 .tags-list {
-    display: flex;
-    flex-wrap: wrap;
+    display:flex;
+    flex-wrap:wrap;
     text-align: left;
     list-style-type: none;
 }
 
-.tags {
-    display: block;
-    margin-top: 25px;
+.tags{
+    display:block;
+    margin-top:25px;
 }
 
 .tag {
-    display: block;
+    display:block;
     border: 3px solid #eeeeee;
-    color: #0f0d0e;
+    color:#0f0d0e;
     font-family: "Open Sans Bold", "Arial", sans-serif;
     font-size: 12px;
     text-transform: uppercase;
-    text-decoration: none;
+    text-decoration:none;
     padding: 8px 14px;
 }
 
-.tags-list-eng {
-    margin-bottom: 7px;
-    margin-right: 5px;
+.tags-list-eng{
+    margin-bottom:7px;
+    margin-right:5px;
 }
 
 .name-list-four {
-    position: relative;
-    text-align: center;
-    margin-top: 63px;
-    margin-bottom: 25px;
+    position:relative;
+    text-align:center;
+    margin-top:63px;
+    margin-bottom:25px;
 }
 
 .name-list-post-four {
     font-family: "Open Sans Bold", "Arial", sans-serif;
-    font-size: 14px;
-    color: #0f0d0e;
+    font-size:14px;
+    color:#0f0d0e;
     text-transform: uppercase;
-    text-decoration: none;
+    text-decoration:none;
     position: relative;
-    font-weight: bold;
+    font-weight:bold;
 }
 
-.name-list-four::after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 66px;
+.name-list-four::after{
+    content:"";
+    position:absolute;
+    display:block;
+    width:66px;
     border-bottom: 3px solid;
-    color: #e1d9bd;
-    margin: auto;
-    left: 0;
-    right: 0;
-    padding-bottom: 15px;
+    color:#e1d9bd;
+    margin:auto;
+    left:0;
+    right:0;
+    padding-bottom:15px;
 }
 
 .theme-list {
     list-style-type: none;
-    margin-bottom: 40px;
+    margin-bottom:40px;
 }
+
 
 
 .theme {
     position: relative;
-    font-family: "Open Sans Bold", "Arial", sans-serif;
+    font-family:"Open Sans Bold", "Arial", sans-serif;
     font-size: 14px;
-    color: #000000;
-    text-decoration: none;
-    font-weight: bold;
-    line-height: 47px;
+    color:#000000;
+    text-decoration:none;
+    font-weight:bold;
+    line-height:47px;
 }
 
-.theme::after {
-    content: "";
-    position: absolute;
-    width: 270px;
+.theme::after{
+    content:"";
+    position:absolute;
+    width:270px;
     border-bottom: 1px solid #eeeeee;
-    padding-bottom: 45px;
-    margin: 0;
-    left: 0;
-    right: 0;
+    padding-bottom:45px;
+    margin:0;
+    left:0;
+    right:0;
 
 }
 
 .number-theme {
-    position: absolute;
-    color: #b59f5b;
-    font-family: "Open Sans Bold", "Arial", sans-serif;
+    position:absolute;
+    color:#b59f5b;
+    font-family:"Open Sans Bold", "Arial", sans-serif;
     font-size: 12px;
-    padding-left: 7px;
+    padding-left:7px;
 }
-
 .title-shop {
     position: relative;
     text-align: center;
@@ -733,17 +710,18 @@ html{
 .posts-shop-all {
     display: flex;
     flex-wrap: wrap;
-    max-width: 120rem;
+    max-width: 1120px;
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
+    justify-content: space-between;
 
 }
 
 .shop-post {
     display: inline-block;
     box-sizing: border-box;
-    width: 300px;
+    width: 25%;
     justify-content: space-between;
     position: relative;
 }
@@ -758,11 +736,13 @@ html{
 }
 
 .content-shop-all {
+
     outline: 2px solid #b59f5b;
     outline-offset: 2rem;
     align-items: flex-end;
     z-index: 2;
     flex-grow: 1;
+    height:250px;
 }
 
 
@@ -824,95 +804,100 @@ html{
     padding: 20px 27px;
 }
 
+
 .footer {
-    max-width: 120rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 127px;
-    padding-top: 66px;
+    width: 1185px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:127px;
+    padding-top:65px;
 }
 
 .footer-end {
-    background-color: #f4f7f6;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    background-color:#f4f7f6;
+    padding-top:30px;
+    padding-bottom:30px;
 }
 
-.footer-social {
+.footer-social{
     display: flex;
-    list-style-type: none;
-    justify-content: center;
+    list-style-type:none;
+    justify-content:center;
 }
 
-.social-name:nth-child(n+2) {
-    margin-left: 30px;
+.social-name:nth-child(n+2){
+    margin-left:30px;
 }
 
 .social-ref {
-    display: block;
-    width: 25px;
-    height: 25px;
-    background-color: #f4f7f6;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: auto;
-    text-decoration: none;
+    display:block;
+    width:25px;
+    height:25px;
+    background-color:#f4f7f6;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:auto;
+    text-decoration:none;
 
 
 }
-
 .social-ref-twitter {
     background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/004-twitter.svg);
 }
-
-.social-ref-pinterest {
+.social-ref-pinterest{
     background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/001-pinterest.svg);
 }
-
-.social-ref-facebook {
+.social-ref-facebook{
     background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/002-facebook-logo.svg);
-    background-size: 25px;
+    background-size:25px;
 }
-
-.social-ref-instagram {
-    background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/005-instagram.svg);
+.social-ref-instagram{
+    background-image:url(https://netology-code.github.io/html-2-diploma/sources/images/social/005-instagram.svg);
 }
-
-.social-ref-tumblr {
+.social-ref-tumblr{
     background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/003-tumblr.svg);
 }
 
 .social-text {
-    color: #f4f7f6;
-    opacity: 0.0;
+    color:#f4f7f6;
+    opacity:0.0;
 }
 
-.copyright {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 74px;
-    justify-content: center;
-    color: #999999;
-    font-size: 12px;
+.copyright{
+    display:flex;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:74px;
+    justify-content:center;
+    color:#999999;
+    font-size:12px;
     font-family: "Open Sans Bold", "Arial", sans-serif;
 }
-
 .popup {
     position: fixed;
-    width: 100%;
-    background-color: rgba(0,0,0,0.8);
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgba(0,0,0,0.8);
+    top:0;
+    overflow: hidden;
+    left: auto;
+ }
+.popup-content{
+    max-width: 393px;
+    margin: auto;
+    background-color: #ffffff;
+    position: relative;
+    width: 99%;
 }
 
 .popup_name {
     position: relative;
     text-align: center;
-    margin-top: 63px;
-    margin-bottom: 25px;
+    padding-top:55px;
 }
 
 .title-popup-name {
@@ -939,9 +924,10 @@ html{
 }
 
 .popup-column__one {
-
+    display: flex;
     padding-top: 30px;
-}
+    flex-direction: column;
+    }
 
 .popup-visit-day {
     border: none;
@@ -957,7 +943,10 @@ html{
     background-size: 15px;
     padding-right: 15px;
 }
-
+.popup-form{
+    padding-left: 30px;
+    padding-right: 30px;
+}
 .popup-visit {
     font-size: 13px;
     font-family: "Open Sans Regular", "Arial", sans-serif;
@@ -1025,10 +1014,10 @@ html{
     background-color: #f4f7f6;
     border: none;
     padding-left: 20px;
-   }
+}
 
 .popup-button-one {
-    margin-bottom: 53px;
+    padding-bottom: 54px;
 }
 
 .popup__button {
@@ -1040,6 +1029,41 @@ html{
     font-size: 14px;
     font-family: "Open Sans Bold", "Arial", sans-serif;
 }
+.popup__close{
+    width: 1.4em;
+    height: 1em;
+    font-size: 20px;
+    position: absolute;
+    top:-1.5em;
+    right:0;
+    background-color: transparent;
+    border:none;
+    padding: 0;
+    text-indent: -9999px;
+    }
+.popup__close:before{
+    content: "";
+    background-color: #ffffff;
+    border-radius: 5px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%) rotate(-45deg);
+    width: 1.4em;
+    height: 0.2em;
+}
+.popup__close:after{
+    content: "";
+    background-color: #ffffff;
+    border-radius: 5px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+    width: 1.4em;
+    height: 0.2em;
+}
+
 
 @media (min-width: 641px) and (max-width: 1199px) {
     html {
@@ -1049,6 +1073,9 @@ html{
     .header {
         background-image: url(../images/banner-bg-tablet.jpg);
         width: 100%
+    }
+    .header-logo-menu{
+        width:700px;
     }
 
     .header-title {
@@ -1075,20 +1102,48 @@ html{
     }
 
     .main-content{
-        flex:1;
-        margin-right: unset;
+        margin-right: 30px;
+        width:37%;
     }
+
     .post-content{
         flex-direction: column;
         margin-left:35px;
     }
     .theme-post{
         margin-top:15px;
+        margin-left: 0;
+    }
+    .posts-shop-all{
+        width:700px;
+        margin-right: 15px;
+        margin-left: 25px;
+    }
+
+
+    .shop-post:last-child {
+        padding-top:300px;
+        padding-left:30px;
+        padding-bottom: 250px;
 
     }
-    .shop-post{
-        width: 47%;
+    .content-shop-all{
+        position: absolute;
     }
+
+    .shop-post{
+        width: 43%;
+            }
+
+    .footer{
+        width: 100%;
+    }
+}
+@media (min-width: 641px) and (max-width: 1199px) and (orientation:landscape){
+    .main-content{
+        margin-right: 7.5rem;
+    }
+
 }
 
 
@@ -1100,29 +1155,98 @@ html{
         background-image: url(../images/banner-mobile.jpg);
         width:100%;
     }
+    .header-logo{
+        margin-top: 150px;
+        width: 270px;
+        margin-left: 30px;
 
+    }
     .header-title{
+        width: 275px;
         font-size: 2.6rem;
+        margin-top: 40px;
     }
     .menu__button{
         display:inline-block;
+        margin-top: -190px;
 
+    }
+    .header-logo-menu{
+        width:330px;
     }
     .header-menu-list{
         display: none;
     }
+
     .trends-post-one, .trends-post-two, .trends-post-three, .trends-post-four{
         width: 100%;
+        margin-bottom: 3px;
     }
     .content-sidebar{
         flex-direction: column;
+        margin-top: 45px;
+        margin-right: 15px;
+        margin-left: 15px;
+        padding: 0;
+        width: 25%;
     }
     .main-content{
         flex:1;
-        margin-right: unset;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .theme-post{
+        margin-left: 0;
+    }
+    .post-image{
+        width: 100%;
     }
     .post-content{
         flex-direction: column;
+        width: 94%;
     }
- }
+    .sidebar{
+        width:330px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .field{
+        width: 330px;
+    }
+    .button{
+        margin-left: 282px;
+    }
+    .mail-field{
+    width:100%;
+    }
+    .button-mail{
+        width: 100%;
+    }
+    .tags{
+        width: 350px;
+    }
+    .theme::after{
+        width: 330px;
+    }
+    .posts-shop-all{
+        flex-direction: column;
+        width: 85%;
+        align-items: center;
+    }
+    .content-shop-all{
+        margin-bottom: 60px;
+    }
+    .shop-post:last-child{
+        margin-right: unset;
+    }
+    .shop-post:first-child{
+        margin-left: unset;
+    }
+    .shop-post{
+        width: 95%;
+    }
 
+    .footer{
+        width: 100%;
+    }
+}
