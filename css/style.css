@@ -1138,6 +1138,11 @@
         margin-right: 4px;
     }
 
+    .content-sidebar{
+        padding-right: unset;
+        padding-left: unset;
+    }
+
     .main-content {
         margin-right: 35px;
 
@@ -1185,7 +1190,8 @@
 
     .content-sidebar {
         max-width: 750px;
-        justify-content: space-between;
+        padding-left: unset;
+        padding-right: unset;
     }
 
     .posts-shop-all {
