@@ -643,8 +643,6 @@
     margin-bottom:40px;
 }
 
-
-
 .theme {
     position: relative;
     font-family:"Open Sans Bold", "Arial", sans-serif;
@@ -653,19 +651,9 @@
     text-decoration:none;
     font-weight:bold;
     line-height:47px;
-}
-
-.theme::after{
-    content:"";
-    position:absolute;
-    width:270px;
+    display: block;
     border-bottom: 1px solid #eeeeee;
-    padding-bottom:45px;
-    margin:0;
-    left:0;
-    right:0;
-
-}
+    }
 
 .number-theme {
     position:absolute;
@@ -673,6 +661,8 @@
     font-family:"Open Sans Bold", "Arial", sans-serif;
     font-size: 12px;
     padding-left:7px;
+    vertical-align: sub;
+    top:-10px;
 }
 .title-shop {
     position: relative;
@@ -732,13 +722,14 @@
 }
 
 .content-shop-all {
-
     outline: 2px solid #b59f5b;
     outline-offset: 2rem;
     align-items: flex-end;
     z-index: 2;
     flex-grow: 1;
     height:250px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 
@@ -1099,7 +1090,7 @@
     }
 
     .main-content{
-        margin-right: 35px;
+        margin-right: 2rem;
     }
 
     .post-content{
@@ -1109,14 +1100,13 @@
     .theme-post{
         margin-top:15px;
         margin-left: 0;
+        max-width:380px;
     }
     .posts-shop-all{
-        width:700px;
+        max-width:700px;
         margin-right: 15px;
         margin-left: 25px;
-        align-items: center;
     }
-
 
     .shop-post:last-child {
         padding-top:300px;
@@ -1205,18 +1195,23 @@
     }
     .post-content{
         flex-direction: column;
-        width: 94%;
+        width: 100%;
     }
     .sidebar{
         width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
+    .search{
+        flex:1;
+    }
     .field{
-        width: 330px;
+        width: 100%;
     }
     .button{
-        margin-left: 282px;
+        position:relative;
+        justify-content: flex-end;
+        margin-left:unset;
     }
     .mail-field{
     width:100%;
@@ -1225,10 +1220,10 @@
         width: 100%;
     }
     .tags{
-        width: 350px;
+        width: 100%;
     }
     .theme::after{
-        width: 330px;
+        width: 350px;
     }
     .posts-shop-all{
         flex-direction: column;
@@ -1236,9 +1231,8 @@
         align-items: center;
     }
     .image-shop-all{
-        align-items: center;
-        margin-right: auto;
-        margin-left: auto;
+        display: flex;
+        justify-content: center;
     }
     .content-shop-all{
         margin-bottom: 60px;
@@ -1250,7 +1244,8 @@
         margin-left: unset;
     }
     .shop-post{
-        width: 95%;
+        width: 97%;
     }
+
 
 }
