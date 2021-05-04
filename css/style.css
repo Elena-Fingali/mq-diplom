@@ -1138,14 +1138,8 @@
         margin-right: 4px;
     }
 
-    .content-sidebar{
-        padding-right: unset;
-        padding-left: unset;
-    }
-
     .main-content {
         margin-right: 35px;
-
     }
 
     .post-content {
@@ -1184,14 +1178,12 @@
 
 @media (min-width: 641px) and (max-width: 1199px) and (orientation: landscape) {
     .main-content {
-        width: 60%;
+        width: 57%;
         margin-right: 35px;
     }
 
     .content-sidebar {
         max-width: 750px;
-        padding-left: unset;
-        padding-right: unset;
     }
 
     .posts-shop-all {
