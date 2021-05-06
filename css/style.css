@@ -1118,7 +1118,7 @@
 
     .menu__button {
         display: inline-block;
-        margin-right: 35px;
+        margin-right: 55px;
     }
 
     .header-menu-list {
@@ -1137,14 +1137,49 @@
     .trends-post-one, .trends-post-three {
         margin-right: 4px;
     }
+    .content-sidebar{
+        max-width: 700px;
+        padding-right: unset;
+        padding-left: unset;
+    }
 
     .main-content {
         margin-right: 35px;
+        width: 60%;
+    }
+    .sidebar{
+        width: 35%;
+    }
+    .form-search{
+        margin-right: 5px;
+    }
+    .search {
+        flex: 1;
+    }
+
+    .field {
+        width: 100%;
+    }
+
+    .button {
+        position: relative;
+        justify-content: flex-end;
+        margin-left: unset;
+    }
+    .form-mail{
+        margin-right: 5px;
+    }
+    .mail-field {
+        width: 100%;
+    }
+
+    .button-mail {
+        width: 100%;
     }
 
     .post-content {
         flex-direction: column;
-        margin-left: 20px;
+        margin-left: 10px;
     }
 
     .theme-post {
@@ -1155,19 +1190,31 @@
 
     .posts-shop-all {
         max-width: 700px;
-        margin-right: 15px;
-        margin-left: 25px;
+    }
+    .shop-post:first-child{
+        margin-left: 15px;
     }
 
     .shop-post:last-child {
         padding-top: 300px;
-        padding-left: 30px;
         padding-bottom: 250px;
+        margin-left:15px;
 
+    }
+    .image-shop-all{
+        margin-left:auto;
+        margin-right: auto;
+    }
+    .shop-post:nth-child(even){
+        margin-right:30px;
     }
 
     .content-shop-all {
         position: absolute;
+        margin-left:20px;
+        margin-right:5px;
+        padding-left: unset;
+        padding-right: unset;
     }
 
     .shop-post {
@@ -1295,9 +1342,6 @@
         width: 100%;
     }
 
-    .theme::after {
-        width: 350px;
-    }
 
     .posts-shop-all {
         flex-direction: column;
