@@ -742,19 +742,12 @@
     display: inline-block;
     box-sizing: border-box;
     width: 25%;
-    justify-content: space-between;
-    position: relative;
-}
-
-.shop-post:first-child {
-    margin-left: 23px;
 
 }
-
-.shop-post:last-child {
-    margin-right: 25px;
+.image-shop-all {
+    display: flex;
+    justify-content: center;
 }
-
 .content-shop-all {
     outline: 2px solid #b59f5b;
     outline-offset: 2rem;
@@ -796,10 +789,9 @@
 
 .product-footer {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-end;
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
 .product-price_old {
@@ -1184,47 +1176,22 @@
 
     }
 
-    .shop-post:first-child{
-        margin-left: 15px;
-    }
-
-    .shop-post:last-child {
-        padding-top: 300px;
-        padding-bottom: 250px;
-        margin-left:15px;
-    }
-    .image-shop-all{
-        margin-left:auto;
-        margin-right: auto;
-    }
-    .shop-post:nth-child(even){
-        margin-right:30px;
-    }
-
     .content-shop-all {
-        position: absolute;
-        margin-left:20px;
-        margin-right:5px;
-        padding-left: unset;
-        padding-right: unset;
+        outline-offset: 1rem;
     }
 
     .shop-post {
-        width: 43%;
+        width:42%;
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-top: 30px;
     }
-
 }
 
 @media (min-width: 641px) and (max-width: 1199px) and (orientation: landscape) {
     .main-content {
         margin-right: 35px;
     }
-
-    .posts-shop-all {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
 }
 
 
@@ -1344,14 +1311,6 @@
 
     .content-shop-all {
         margin-bottom: 60px;
-    }
-
-    .shop-post:last-child {
-        margin-right: unset;
-    }
-
-    .shop-post:first-child {
-        margin-left: unset;
     }
 
     .shop-post {
