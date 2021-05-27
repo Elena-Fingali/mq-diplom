@@ -1199,7 +1199,8 @@
     .header-logo {
         margin-top: 150px;
         width: 270px;
-    }
+        justify-content: center;
+     }
 
     .header-title {
         font-size: 2.6rem;
@@ -1211,10 +1212,10 @@
         margin-top: -190px;
 
     }
-
-    .header-logo-menu {
-        width: 330px;
+    .header-logo-menu{
+        justify-content: center;
     }
+
 
     .header-menu-list {
         display: none;
