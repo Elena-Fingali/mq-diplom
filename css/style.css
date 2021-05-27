@@ -913,12 +913,13 @@
     background-color: #ffffff;
     position: relative;
     width: 99%;
+    padding: 51px 30px 55px;
 }
 
 .popup_name {
     position: relative;
     text-align: center;
-    padding-top: 55px;
+
 }
 
 .title-popup-name {
@@ -952,7 +953,7 @@
 
 .popup-visit-day {
     border: none;
-    width: 329px;
+    width: 100%;
     height: 48px;
     background-color: #f4f7f6;
     margin-top: 10px;
@@ -963,11 +964,6 @@
     background-position: 98% center;
     background-size: 15px;
     padding-right: 15px;
-}
-
-.popup-form {
-    padding-left: 30px;
-    padding-right: 30px;
 }
 
 .popup-visit {
@@ -1032,19 +1028,18 @@
 }
 
 .popup-visit-offers {
-    width: 330px;
+    width: 100%;
     height: 130px;
     background-color: #f4f7f6;
     border: none;
     padding-left: 20px;
-}
-
-.popup-button-one {
-    padding-bottom: 54px;
+    padding-top: 20px;
+    font-family: "Open Sans Regular", "Arial", sans-serif;
+    font-size: 13px;
 }
 
 .popup__button {
-    width: 329px;
+    width: 100%;
     height: 48px;
     background-color: #b59f5b;
     border: none;
@@ -1093,16 +1088,12 @@
 
 @media (min-width: 641px) and (max-width: 1199px) {
     html {
-        font-size: 87.5%;
+        font-size: 85%;
     }
 
     .header {
         background-image: url(../images/banner-bg-tablet.jpg);
         width: 100%
-    }
-
-    .header-logo-menu {
-        width: 700px;
     }
 
     .header-title {
@@ -1208,12 +1199,9 @@
     .header-logo {
         margin-top: 150px;
         width: 270px;
-        margin-left: 30px;
-
     }
 
     .header-title {
-        width: 275px;
         font-size: 2.6rem;
         margin-top: 40px;
     }
